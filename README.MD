@@ -121,7 +121,7 @@ python RL_controllers/train_ppo.py --max_episodes 4000 --save_path ppo_results
 
 ## 🤖 RL Models
 
-### D3QN (Double Dueling Deep Q-Network)
+### 1. D3QN (Double Dueling Deep Q-Network)
 
 The Double Dueling Deep Q-Network (D3QN) is an advanced value-based reinforcement learning algorithm that combines two key improvements over the standard DQN:
 
@@ -148,7 +148,7 @@ The Double Dueling Deep Q-Network (D3QN) is an advanced value-based reinforcemen
 - Replay buffer and preprocessing: [`RL_controllers/utils.py`](RL_controllers/utils.py)
 - Environment wrapper: [`RL_controllers/env_wrapper.py`](RL_controllers/env_wrapper.py)
 
-### PPO (Proximal Policy Optimization)
+### 2. PPO (Proximal Policy Optimization)
 
 Proximal Policy Optimization (PPO) is a popular on-policy reinforcement learning algorithm known for its stability and ease of implementation. PPO uses a clipped surrogate objective to prevent large, destabilizing policy updates, making it robust for a wide range of environments.
 
@@ -171,7 +171,7 @@ Proximal Policy Optimization (PPO) is a popular on-policy reinforcement learning
 - Replay buffer and preprocessing: [`RL_controllers/utils.py`](RL_controllers/utils.py)
 - Environment wrapper: [`RL_controllers/env_wrapper.py`](RL_controllers/env_wrapper.py)
 
-### SAC (Soft Actor-Critic, Discrete)
+### 3. SAC (Soft Actor-Critic, Discrete)
 
 Soft Actor-Critic (SAC) is an off-policy reinforcement learning algorithm that optimizes both expected return and policy entropy, encouraging exploration and robustness. In this project, SAC is adapted for discrete action spaces by using a categorical policy and Q-value critics.
 
