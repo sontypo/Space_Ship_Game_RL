@@ -1,4 +1,4 @@
-# Space Ship Game Reinforcement Learning System
+# Space Ship Game with Reinforcement Learning
 
 ## 🚀 Project Overview
 
@@ -195,8 +195,6 @@ Soft Actor-Critic (SAC) is an off-policy reinforcement learning algorithm that o
 - Training script: [`RL_controllers/train_sac_discrete.py`](RL_controllers/train_sac_discrete.py)
 - Replay buffer and preprocessing: [`RL_controllers/utils.py`](RL_controllers/utils.py)
 - Environment wrapper: [`RL_controllers/env_wrapper.py`](RL_controllers/env_wrapper.py)
-
----
 
 ---
 
