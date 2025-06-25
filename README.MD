@@ -134,10 +134,6 @@ The Double Dueling Deep Q-Network (D3QN) is an advanced value-based reinforcemen
 - The output is split into two fully connected streams:
   - **Value stream:** Estimates the value of being in a given state.
   - **Advantage stream:** Estimates the advantage of each action in that state.
-- The final Q-value is computed as:
-  $$
-  Q(s, a) = V(s) + \left( A(s, a) - \frac{1}{|\mathcal{A}|} \sum_{a'} A(s, a') \right)
-  $$
 
 **Replay Buffer:**
 - D3QN can be trained with either a standard replay buffer (uniform sampling) or a prioritized replay buffer (sampling transitions with higher TD error more frequently).
@@ -164,11 +160,6 @@ Proximal Policy Optimization (PPO) is a popular on-policy reinforcement learning
 
 **Key Algorithm Details:**
 - The agent collects trajectories and updates its policy and value networks every fixed number of timesteps using mini-batch optimization.
-- The PPO objective is:
-  $$
-  L^{\text{CLIP}}(\theta) = \mathbb{E}_t \left[ \min \left( r_t(\theta) \hat{A}_t, \; \text{clip}(r_t(\theta), 1 - \epsilon, 1 + \epsilon) \hat{A}_t \right) \right]
-  $$
-  where $r_t(\theta)$ is the probability ratio between new and old policies, and $\hat{A}_t$ is the advantage estimate.
 
 **Key Benefits:**
 - Stable and reliable policy updates.
@@ -264,7 +255,7 @@ After training, the performance of the RL agents is validated by running the tra
 ---
 
 ## 👥 Contributors
-This project was developed and carried out by a group of four students as the final project for the course 'Machine Learning in Engineering Science', under the guidance of Professor [Chi-Hua Yu](https://researchoutput.ncku.edu.tw/en/persons/chi-hua-yu).
+This project was developed and carried out by one master student, as the final project for the course 'Optimization and Reinforcement Learning', under the guidance of Professor [Chi-Hua Yu](https://researchoutput.ncku.edu.tw/en/persons/chi-hua-yu).
 
 - Hong-Son Nguyen (阮洪山) - N16137037 [✉](mailto:n16137037@gs.ncku.edu.tw)
 
