@@ -232,7 +232,7 @@ After training, the performance of the RL agents is validated by running the tra
 ### Notes
 
 - The validation process can be adapted for other RL agents (PPO, SAC) by following a similar workflow: load the trained model (either as a specific `.pth` file or a `checkpoint.pth` file from the specific folder inside [`RL_controllers/saved_models/..`](RL_controllers/saved_models/) directory), run in evaluation mode, and record performance.
-- For the best performance, please navigate to [`RL_controllers/saved_models/d3qn_data_2/`](RL_controllers/saved_models/d3qn_data_2/), then load ['d3qn_model_ep3450.pth'](RL_controllers/saved_models/d3qn_data_2/d3qn_model_ep3450.pth) and ['d3qn_target_model_ep3450.pth'](RL_controllers/saved_models/d3qn_data_2/d3qn_target_model_ep3450.pth) into validation scripts to see how RL plays space-ship game.
+- For the best performance, please navigate to [`RL_controllers/saved_models/d3qn_data_2/`](RL_controllers/saved_models/d3qn_data_2/), then load [d3qn_model_ep3450.pth](RL_controllers/saved_models/d3qn_data_2/d3qn_model_ep3450.pth) and [d3qn_target_model_ep3450.pth](RL_controllers/saved_models/d3qn_data_2/d3qn_target_model_ep3450.pth) into validation scripts to see how RL plays space-ship game.
 - Videos and results are saved in the `saved_models/best_trial_videos/` directory for easy review and presentation.
 
 ---
