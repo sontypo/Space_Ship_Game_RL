@@ -133,7 +133,9 @@ The Double Dueling Deep Q-Network (D3QN) is an advanced value-based reinforcemen
 - **Double Q-Learning:** Reduces overestimation bias by decoupling action selection and evaluation using separate online and target networks.
 - **Dueling Network Architecture:** Splits the Q-value estimation into two streams: one for the state-value function and one for the advantage function, which are then combined to produce the final Q-values for each action.
 
-![D3QN network structure](Report/D3QN.png)
+<p align="center">
+  <img src="Report/D3QN.png" alt="D3QN network structure" width="450"/>
+</p>
 
 **Network Structure:**
 - Input: Stacked grayscale frames (shape: 4 × 84 × 84)
@@ -159,7 +161,9 @@ The Double Dueling Deep Q-Network (D3QN) is an advanced value-based reinforcemen
 
 Proximal Policy Optimization (PPO) is a popular on-policy reinforcement learning algorithm known for its stability and ease of implementation. PPO uses a clipped surrogate objective to prevent large, destabilizing policy updates, making it robust for a wide range of environments.
 
-![PPO network structure](Report/PPO.png)
+<p align="center">
+  <img src="Report/PPO.png" alt="PPO network structure" width="450"/>
+</p>
 
 **Network Structure:**
 - Separate convolutional neural networks are used for the policy (actor) and value (critic) functions.
@@ -184,7 +188,9 @@ Proximal Policy Optimization (PPO) is a popular on-policy reinforcement learning
 
 Soft Actor-Critic (SAC) is an off-policy reinforcement learning algorithm that optimizes both expected return and policy entropy, encouraging exploration and robustness. In this project, SAC is adapted for discrete action spaces by using a categorical policy and Q-value critics.
 
-![SAC network structure](Report/SAC.png)
+<p align="center">
+  <img src="Report/SAC.png" alt="SAC network structure" width="450"/>
+</p>
 
 **Network Structure:**
 - Shared convolutional feature extractor processes stacked grayscale frames (shape: 4 × 84 × 84).
