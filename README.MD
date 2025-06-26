@@ -4,7 +4,10 @@
 
 This project aims to develop and compare state-of-the-art reinforcement learning (RL) algorithms for maximizing the score in a custom-built space ship game. The game is implemented in Python using Pygame and features a player-controlled spaceship that must avoid and destroy falling rocks, collect power-ups, and survive as long as possible. The main objective is to train RL agents that can achieve high scores through optimized gameplay.
 
-![Demo](RL_controllers/saved_models/best_trial_videos//demo_episode_3450th_score_1925.gif)
+>> 🕹️ Gameplay Demo
+<p align="center">
+  <img src="RL_controllers/saved_models/best_trial_videos//demo_episode_3450th_score_1925.gif" alt="Demo" width="600"/>
+</p>
 
 ---
 
@@ -130,8 +133,9 @@ The Double Dueling Deep Q-Network (D3QN) is an advanced value-based reinforcemen
 - **Double Q-Learning:** Reduces overestimation bias by decoupling action selection and evaluation using separate online and target networks.
 - **Dueling Network Architecture:** Splits the Q-value estimation into two streams: one for the state-value function and one for the advantage function, which are then combined to produce the final Q-values for each action.
 
-**Network Structure:**
 ![D3QN network structure](Report/D3QN.png)
+
+**Network Structure:**
 - Input: Stacked grayscale frames (shape: 4 × 84 × 84)
 - Convolutional layers extract spatial features from the input frames.
 - The output is split into two fully connected streams:
@@ -155,8 +159,9 @@ The Double Dueling Deep Q-Network (D3QN) is an advanced value-based reinforcemen
 
 Proximal Policy Optimization (PPO) is a popular on-policy reinforcement learning algorithm known for its stability and ease of implementation. PPO uses a clipped surrogate objective to prevent large, destabilizing policy updates, making it robust for a wide range of environments.
 
-**Network Structure:**
 ![PPO network structure](Report/PPO.png)
+
+**Network Structure:**
 - Separate convolutional neural networks are used for the policy (actor) and value (critic) functions.
 - **Policy Network:** Outputs a probability distribution over discrete actions using a softmax layer.
 - **Value Network:** Estimates the expected return (state value) for each state.
@@ -179,8 +184,9 @@ Proximal Policy Optimization (PPO) is a popular on-policy reinforcement learning
 
 Soft Actor-Critic (SAC) is an off-policy reinforcement learning algorithm that optimizes both expected return and policy entropy, encouraging exploration and robustness. In this project, SAC is adapted for discrete action spaces by using a categorical policy and Q-value critics.
 
-**Network Structure:**
 ![SAC network structure](Report/SAC.png)
+
+**Network Structure:**
 - Shared convolutional feature extractor processes stacked grayscale frames (shape: 4 × 84 × 84).
 - **Actor Network:** Outputs a categorical probability distribution over discrete actions using a softmax layer.
 - **Critic Networks:** Two separate Q-value networks estimate the value of each action for a given state.
