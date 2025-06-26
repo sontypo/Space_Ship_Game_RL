@@ -6,7 +6,7 @@ This project aims to develop and compare state-of-the-art reinforcement learning
 
 > 🕹️ Gameplay Demo
 <p align="center">
-  <img src="RL_controllers/saved_models/best_trial_videos//demo_episode_3450th_score_1925.gif" alt="Demo" width="450"/>
+  <img src="RL_controllers/saved_models/best_trial_videos//demo_episode_3450th_score_1925.gif" alt="Demo" width="380"/>
 </p>
 
 ---
