@@ -4,9 +4,9 @@
 
 This project aims to develop and compare state-of-the-art reinforcement learning (RL) algorithms for maximizing the score in a custom-built space ship game. The game is implemented in Python using Pygame and features a player-controlled spaceship that must avoid and destroy falling rocks, collect power-ups, and survive as long as possible. The main objective is to train RL agents that can achieve high scores through optimized gameplay.
 
->> 🕹️ Gameplay Demo
+> 🕹️ Gameplay Demo
 <p align="center">
-  <img src="RL_controllers/saved_models/best_trial_videos//demo_episode_3450th_score_1925.gif" alt="Demo" width="600"/>
+  <img src="RL_controllers/saved_models/best_trial_videos//demo_episode_3450th_score_1925.gif" alt="Demo" width="450"/>
 </p>
 
 ---
